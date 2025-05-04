@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Create Entry{% endblock %}
+{% block content %}
+<h2>Create Entry</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+        {{ form.title.label }} {{ form.title(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.content.label }} {{ form.content(class="form-control", rows=5) }}
+    </div>
+    <div>
+        {{ form.submit(class="btn btn-primary") }}
+    </div>
+</form>
+{% endblock %}

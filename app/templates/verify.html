@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Verify Code{% endblock %}
+{% block content %}
+<h2>Enter Verification Code</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.code.label }} {{ form.code(class="form-control") }}
+    {{ form.submit(class="btn btn-success mt-2") }}
+</form>
+{% endblock %}
