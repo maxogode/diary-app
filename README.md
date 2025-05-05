@@ -1,6 +1,6 @@
 #  Diary App
 
-A Flask-based personal diary application with secure user login, SMS-based 2FA using Twilio, entry creation, and an admin panel. Built with Flask, SQLAlchemy, WTForms, Docker, and deployed-ready.
+A Flask-based personal diary application with secure user login, SMS-based 2FA using Twilio, entry creation. Built with Flask, SQLAlchemy, WTForms, Docker, and deployed-ready.
 
 ---
 
