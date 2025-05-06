@@ -8,7 +8,7 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(150), unique=True, nullable=False)
     password_hash = db.Column(db.String(256), nullable=False)
     phone_number = db.Column(db.String(20), nullable=False)
-    is_admin = db.Column(db.Boolean, default=False)
+
 
     entries = db.relationship('Entry', backref='user', lazy=True)
 

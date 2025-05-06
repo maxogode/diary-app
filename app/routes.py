@@ -119,7 +119,7 @@ def create_entry():
 @login_required
 def delete_entry(entry_id):
     entry = Entry.query.get_or_404(entry_id)
-    if entry.user_id != current_user.id and not current_user.is_admin:
+    if entry.user_id != current_user.id :
         flash("You don't have permission to delete this entry.")
         return redirect(url_for('main.dashboard'))
 
